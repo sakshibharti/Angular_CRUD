@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title><%= title %></title>
+  
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Content/app.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">COMP308</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+      <% if (title== "Home") {%>
+        <li class="nav-item active">
+        <% } else {%>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/"><i class="fa fa-lg fa-building"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+
+         <% if (title== "About") {%>
+        <li class="nav-item active">
+        <% } else {%>
+        <li class="nav-item">
+        <% } %>
+       
+          <a class="nav-link" href="/about"><i class="fa fa-lg fa-user"></i> About</a>
+        </li>
+
+         <% if (title== "Favourite Things") {%>
+        <li class="nav-item active">
+        <% } else {%>
+        <li class="nav-item">
+        <% } %>
+         <a class="nav-link" href="/contact"><i class="fa fa-lg fa-address-book"></i> Favourite Things</a>
+          </li>
+            
+
+           <% if (title== "Product") {%>
+        <li class="nav-item active">
+        <% } else {%>
+        <li class="nav-item">
+        <% } %>
+         <a class="nav-link" href="/product"><i class="fa fa-lg fa-product-hunt"></i> Product</a>
+          </li>
+            
+        <% if (title== "Services") {%>
+        <li class="nav-item active">
+        <% } else {%>
+        <li class="nav-item">
+        <% } %>
+        <a class="nav-link" href="/services"><i class="fa fa-lg fa-cog"></i> Services</a>
+          </li>   
+      </ul>
+    </div>
+  </nav>
+
+  

@@ -1,0 +1,36 @@
+<% include ../partials/header.ejs %>
+
+
+<!-- content goes here -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+
+        <br>
+        <table class="table table-bordered table-striped table-hover">
+           <!-- header row -->
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Description</th>
+                
+               
+            </tr>
+<!-- template row -->
+
+<% for(let count = 0; count < contactList.length ; count++) { %>
+    <tr>
+        <td class="text-center"> <%= contactList[count].name %></td>
+        <td class="text-center"> <%= contactList[count].description %></td>
+       
+        
+    </tr>
+<% } %>
+
+</table>
+</div>
+</div>
+</div>
+
+
+<% include ../partials/footer.ejs %>
