@@ -7,13 +7,14 @@
 
   <title><%= title %></title>
   
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="Content/app.css">
+  <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Content/app.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">COMP308</a>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark" >
+    <a class="navbar-brand" href="/"><img src="Assets/images/sakshibharti.png" style="height:50px">Sakshi Bharti</a>
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,29 +39,29 @@
           <a class="nav-link" href="/about"><i class="fa fa-lg fa-user"></i> About</a>
         </li>
 
-         <% if (title== "Favourite Things") {%>
+         <% if (title== "Projects") {%>
         <li class="nav-item active">
         <% } else {%>
         <li class="nav-item">
         <% } %>
-         <a class="nav-link" href="/contact"><i class="fa fa-lg fa-address-book"></i> Favourite Things</a>
+         <a class="nav-link" href="/projects"><i class="fa fa-lg fa-product-hunt"></i> Projects</a>
           </li>
             
 
-           <% if (title== "Product") {%>
+           <% if (title== "Services") {%>
         <li class="nav-item active">
         <% } else {%>
         <li class="nav-item">
         <% } %>
-         <a class="nav-link" href="/product"><i class="fa fa-lg fa-product-hunt"></i> Product</a>
+         <a class="nav-link" href="/services"><i class="fa fa-lg fa-cog"></i> Services</a>
           </li>
             
-        <% if (title== "Services") {%>
+        <% if (title== "ContactMe") {%>
         <li class="nav-item active">
         <% } else {%>
         <li class="nav-item">
         <% } %>
-        <a class="nav-link" href="/services"><i class="fa fa-lg fa-cog"></i> Services</a>
+        <a class="nav-link" href="/contactme"><i class="fa fa-lg fa-address-book"></i> ContactMe</a>
           </li>   
       </ul>
     </div>

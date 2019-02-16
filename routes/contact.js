@@ -13,7 +13,7 @@ if(err) {
     return console.error(err);
 }
 else{
-    console.log(contactList);
+    //console.log(contactList);
     res.render('contacts/index', {
 title: 'Contact List',
 contactList:contactList
@@ -21,6 +21,14 @@ contactList:contactList
 }
 })
 });
+
+// GET the Add page for the Contact-List
+router.get('/add', (req, res, next)=>{
+ res.render('contacts/add',{
+     title: "Add a new Contact"
+ });
+});
+
 
 
 module.exports = router;

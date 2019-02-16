@@ -1,5 +1,5 @@
 {
-  "name": "comp308-w2019-mongopractice",
+  "name": "comp308-w2019-assignment1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -21,7 +21,7 @@
   "main": "server.js",
   "author": "sakshi",
   "license": "ISC",
-  "description": "MongoDB Practice",
+  "description": "Assignment1",
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
     "@types/cookie-parser": "^1.4.1",
@@ -29,13 +29,6 @@
     "@types/mongoose": "^5.3.12",
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.12.18"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sakshibharti/comp308_w2019_mongopractice.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sakshibharti/comp308_w2019_mongopractice/issues"
-  },
-  "homepage": "https://github.com/sakshibharti/comp308_w2019_mongopractice#readme"
+  }
+  
 }

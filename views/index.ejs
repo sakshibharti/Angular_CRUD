@@ -1,13 +1,138 @@
 <%include ./partials/header.ejs%>
 <!-- Content goes here -->
   <div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4"><%= title %></h1>
-        <% if(title == "Favourite Things") { %>
-        <a class="btn btn-primary" href="/contact-list" role="button">Sakshi Favorite Things List</a>
+    <div class="jumbotron" > 
+        <h1 class="display-4"></h1>
+        <% if(title == "Home") { %>
+        <h1 style="margin-left:40%"><b>Hi, I am Sakshi! </b> </h1>
+        <p><b><i>My personal mission is to always live with integrity, positivity  and strive to use everyday and every experience as an opportunity for improvement and growth. 
+        I intend to apply this to my life personally and professionally. I present here a brief introduction about myself.  </i></p>
+        <a style="margin-left:45%" class="btn btn-primary" href="/about" role="button" ><b>About Me -></a>
        <% } %>
+
+
+
+       <% if(title == "About") { %>
+   <h1>Sakshi Bharti <img src="Assets/images/sakshi.jpg" style="height:300px; float:right; margin-top:25px; border: solid black 4px; padding: 2px"></h1>
+        <p><b> 
+I am a graduate from Centennial College, with a diploma in Software Engineering Technology.
+During my academic studies at Centennial college I have developed key technical skills in the area of Software Technology. 
+My soft interpersonal skills include Multitasking, Leadership Tasks.
+These skills have developed my ability to perform well under pressure, multiple tasks.
+My related work-experience include learning more about technical skill and also how to perform
+in team. </p>
+<p style="margin-right:200px">My years of experience in the area of Software Technology will help me excel at this 
+position and become a valued member of your team.
+The qualities I bring to your company and this job are positive attitude, flexibility. I am confident that I am the best candidate for this job because I have knowledge of all the required technologies and also have the ability to effectively prioritize and execute tasks in high-pressure environment.
+  </p>
+<p>
+        <a style="margin-top:65px;margin-left:45%" class="btn btn-primary" href="Assets/documents/Resume.pdf" role="button" ><b>Resume -></a></p>
+       <% } %>
+
+
+        <% if(title == "Projects") { %>
+        <h1 style="margin-top:-45px; margin-left:35%"><b>Projects Information</h1>
+        <p><h2><b>Implemented Projects are:</b></h2></p>
+        <h1>TTCPay <img src="Assets/images/ttcpay.png" style="height:300px; float:right; margin-top:15px; border: solid black 4px; padding: 2px"></h1>
+        <p> 
+In this project, we explore the methods which are currently used and 
+built an application which will allow the user to register oneself, purchase and 
+activate a TTC ticket or a pass containing a bar code which can further be scanned by the drivers. 
+With this app, we provided a flexible, easy and a convenient way to travel on TTC buses.   </p>
+<p style="margin-right:200px">This project holds a great significance to the Toronto transit riders who commute daily by buses and streetcars. Losing paper tickets, waiting in long queues to buy monthly bus passes, shortage of coins while paying the fare and 
+many other such issues are faced by people on daily basis.
+  </p>
+  <br>
+  <h1>MovieWorld <img src="Assets/images/movie.jpg" style="height:250px; float:right; margin-top:15px; border: solid black 4px; padding: 2px"></h1>
+<p> 
+In this project, I have implemented a Web Application by using ASP.NET Core MVC Template 
+and host the app in AWS Elastic BeanStalk. The web application is all about implementing a Movie web app 
+similar to Netflix. It allows registered customers to upload or download a movie. 
+Also, a customer can provide the feedback for a movie by rating it.  </p>
+<p style="margin-right:200px">This project also allows the customer to write the comments about a movie.
+  </p>
+
+  <br>
+  <h1>ElectronicsProduct <img src="Assets/images/ttcpay.png" style="height:300px; float:right; margin-top:15px; border: solid black 4px; padding: 2px"></h1>
+<p> 
+In this project,    </p>
+<p style="margin-right:200px">This project holds a great significance to the Toronto transit riders who commute daily by buses and streetcars. Losing paper tickets, waiting in long queues to buy monthly bus passes, shortage of coins while paying the fare and 
+many other such issues are faced by people on daily basis.
+  </p>
        
-      </div>
+<% } %>
+
+      <% if(title == "Services") { %>
+        <h1 style="margin-top:-45px; margin-left:35%"><b>Services Information</h1>
+        <p><h2><b>Provided Services are:</b></h2></p>
+        <p><b>Web Development</b></p>
+        <p><img src="Assets/images/web.jpg" style="height:200px; float:left; border: solid black 4px; padding: 2px"></p><br><br><br><br><br><br><br><br><br><br>
+        
+        <br><br><br><br><p style="margin-right:15%; margin-top:-120px"><b>Mobile Application Development</b></p>
+        <p><img src="Assets/images/mobile-app-development.jpg" style="height:175px; float:left; border: solid black 4px; padding: 2px"></p><br> <br><br><br>
+        <br><br><br><br><p><b>JAVA</b></p>
+        <p><img src="Assets/images/java.jpg" style="height:200px; float:left; border: solid black 4px; padding: 2px"></p><br> 
+        <p style="float:right;margin-top:-550px;margin-right:40%"><b>JAVAScript</b></p>
+        <p><img src="Assets/images/javascript.png" style="height:200px;width:500px; float:right; margin-top:-530px;margin-right:5%;border: solid black 4px; padding: 2px"></p><br> 
+        <br><br><br><br><p style="float:right;margin-top:-430px;margin-right:40%"><b>Data Structures</b></p>
+        <p><img src="Assets/images/ds.jpg" style="height:250px; float:right; margin-top:-405px;margin-right:16%;border: solid black 4px; padding: 2px"></p><br> 
+        <% } %>
+
+
+
+
+   <% if(title == "ContactMe") { %>
+        <h1 style="margin-top:-45px; margin-left:35%"><b>Contact Information</h1>
+        <p><h2><b>Sakshi Bharti</b></h2></p>
+        <p><b>Primary Email:</b></p>
+        <p>sakshibharti1@gmail.com</p>
+        <p><b>Contact Number:</b></p>
+        <p>(+1)416-579-8744</p>
+
+        <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1 style="margin-top:5px ; margin-left:-15px"><b><%=title%></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter First Name"
+                    class="form-control" id="FirstNameTextField" name="FirstNameTextField" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter Last Name"
+                    class="form-control" id="LastNameTextField" name="LastNameTextField" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="">Contact Number</label>
+                        <input type="text" placeholder="Enter Contact"
+                        class="form-control" id="ContactTextField" name="Contact" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Email Address</label>
+                        <input type="text" placeholder="Enter Email"
+                        class="form-control" id="EmailTextField" name="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Message</label>
+                        <input type="text" placeholder="Type a Message" style="height:100px"
+                        class="form-control" id="MessageTextField" name="Message" required>
+                    </div>
+                    <a style="margin-left:0%" class="btn btn-primary" href="/contact-list/add" role="button" ><b><i class="fa fa-check-square-o" ></i>Submit</a>
+                    
+            </form>
+        </div>
+    </div>
+</div>
+       
+       <% } %>
+
+       </div>
   </div> 
 
 <%include ./partials/footer.ejs%>
