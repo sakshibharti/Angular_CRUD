@@ -53,11 +53,13 @@ Also, a customer can provide the feedback for a movie by rating it.  </p>
   </p>
 
   <br>
-  <h1>ElectronicsProduct <img src="Assets/images/ttcpay.png" style="height:300px; float:right; margin-top:15px; border: solid black 4px; padding: 2px"></h1>
+  <h1>ElectronicsProduct <img src="Assets/images/apiproject.png" style="height:300px; float:right; margin-top:15px; border: solid black 4px; padding: 2px"></h1>
 <p> 
-In this project,    </p>
-<p style="margin-right:200px">This project holds a great significance to the Toronto transit riders who commute daily by buses and streetcars. Losing paper tickets, waiting in long queues to buy monthly bus passes, shortage of coins while paying the fare and 
-many other such issues are faced by people on daily basis.
+In this project, an API application was built using C# on visual studio.
+The basic aim of API is to allow customers to search for different electronic products along with their costs. 
+In order to build this website, Apigee platform was used to manage the API and the project was published to AWS cloud services.   </p>
+<p style="margin-right:200px">This project holds a great significance to the people who find difficulties while searching for electronic products. 
+
   </p>
        
 <% } %>
@@ -93,7 +95,7 @@ many other such issues are faced by people on daily basis.
     <div class="row">
         <div class="col-md-offset-3 col-md-6">
             <h1 style="margin-top:5px ; margin-left:-15px"><b><%=title%></h1>
-            <form class="form" method="POST">
+            <form class="form" method="post">
                 <div class="form-group">
                     <label for="">First Name</label>
                     <input type="text" placeholder="Enter First Name"
@@ -106,7 +108,7 @@ many other such issues are faced by people on daily basis.
                     class="form-control" id="LastNameTextField" name="LastNameTextField" required>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" method="Post">
                         <label for="">Contact Number</label>
                         <input type="text" placeholder="Enter Contact"
                         class="form-control" id="ContactTextField" name="Contact" required>
@@ -123,7 +125,7 @@ many other such issues are faced by people on daily basis.
                         <input type="text" placeholder="Type a Message" style="height:100px"
                         class="form-control" id="MessageTextField" name="Message" required>
                     </div>
-                    <a style="margin-left:0%" class="btn btn-primary" href="/contact-list/add" role="button" ><b><i class="fa fa-check-square-o" ></i>Submit</a>
+                    <a style="margin-left:0%" class="btn btn-primary" href="/" role="button" ><b><i class="fa fa-check-square-o" ></i>Submit</a>
                     
             </form>
         </div>

@@ -6,6 +6,13 @@ router.get('/', (req, res, next)=> {
   res.render('index', { title: 'Home' });
 });
 
+router.post('/',(req, res, next)=>{
+  console.log(req.body);  
+  res.render('index', { title: 'Home' });
+});
+router.post('/index',(req, res, next)=>{
+  console.log(req.body);
+});
 router.get('/about', (req, res, next)=> {
   res.render('index', { title: 'About' });
 });
