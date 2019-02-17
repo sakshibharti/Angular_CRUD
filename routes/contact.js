@@ -26,6 +26,7 @@ contactList:contactList
 /*Sakshi Bharti (300991470) */
 
 router.post('/',(req,res,next) => {
+    console.log('I am here');
     console.log(req.body);
 });
 // GET the Add page for the Contact-List
